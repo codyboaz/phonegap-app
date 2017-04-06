@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div id="overlay">
+        <div id="modal">
+          <span class="close">X</span>
+          <iframe width="650" height="405" src="" frameborder="0" allowfullscreen id="frame"></iframe>
+        </div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="container">
+          <div class="row padded">
+            <div class="col-6">
+              <div id="main-header" class="header-0">BackBeat PRO 2</div>
+              <div id="secondary-header">From sound to silence and back.</div>
+              <h3>KEY FEATURES</h3>
+              <ul class="features">
+                <li>
+                  Immersive, High-Res Sound
+                  <ul>
+                    <li>Immersive, high-res sound, and powerful speaker drivers deliver the right balance of rich bass, crisp highs, and natural mid-tones for your music.</li>
+                  </ul>
+                </li>
+                <li>
+                  Active Noise Cancelling (ANC)
+                  <ul>
+                    <li>Switch on active noise cancelling (ANC) to minimize ambient noise while working or traveling.</li>
+                  </ul>
+                </li>
+                <li>
+                  24-Hour Streaming
+                  <ul>
+                    <li>Enjoy up to 24 hours of wireless music, movies and calls before choosing the cabled connection or recharging.</li>
+                  </ul>
+                </li>
+                <div class="show-more">
+                  <li>
+                    Wireless Freedom
+                  </li>
+                  <li>
+                    Smart Power Management
+                  </li>
+                  <li>
+                    Hear Your Surroundings
+                  </li>
+                </div>
+                <li class="view-more">
+                  View More...
+                </li>
+                <img src="media/pltLogo.png" class="pltImage modalClick" onClick="video_url('https://www.youtube.com/embed/UNuzDpu2tIY');">
+              </ul>
+            </div>
+            <div class="col-6">
+              <div class="center">
+                <img src="media/product-0.png">
+              </div>
+            </div>
+          </div>
+          <div id="footer"></div>
+        </div>
+        <div class="swiper-slide" id="container2">
+          <div class="row padded">
+            <div class="col-6">
+              <div id="main-header" class="header-1">BackBeat FIT</div>
+              <div id="secondary-header">As unstoppable as you are.</div>
+              <h3>KEY FEATURES</h3>
+              <ul class="features">
+                <li>
+                  Stable, Comfortable Fit
+                  <ul>
+                    <li>Flexible design fits comfortably and stays put for all levels of exercise.</li>
+                  </ul>
+                </li>
+                <li>
+                  Sweatproof and Waterproof* Coating by P2i
+                  <ul>
+                    <li>Protected by a P2i nano-coating, these headphones deliver sweatproof durability and meet the IP57 rating for withstanding fresh water up to one meter for 30 minutes.</li>
+                  </ul>
+                </li>
+                <li>
+                  On-Ear Controls for Calls and Music
+                  <ul>
+                    <li>Easy controls let you keep moving while you control your music or calls.</li>
+                  </ul>
+                </li>
+                <div class="show-more">
+                  <li>
+                    Safety-Oriented Eartip Design
+                  </li>
+                  <li>
+                    Smartphone Armband
+                  </li>
+                  <li>
+                    Up to Eight Hours of Listening Time 
+                  </li>
+                </div>
+                <li class="view-more">
+                  View More...
+                </li>
+                <img src="media/pltLogo.png" class="pltImage modalClick" onClick="video_url('https://www.youtube.com/embed/JUfUV8_g3rY');">
+              </ul>
+            </div>
+            <div class="col-6">
+              <div class="center">
+                <img src="media/product-1.png" id="bbfit">
+              </div>
+            </div>
+          </div>
+          <div id="footer2"></div>
+        </div>
+        <div class="swiper-slide" id="container3">
+          <div class="row padded">
+            <div class="col-6">
+              <div id="main-header" class="header-2">BackBeat SENSE</div>
+              <div id="secondary-header">Welcome to nonstop listening.</div>
+              <h3>KEY FEATURES</h3>
+              <ul class="features">
+                <li>
+                  Special Edition Splashproof Coating
+                  <ul>
+                    <li>These Special Edition headphones have a nano-coating by P2i applied during the manufacturing process to protect against damage caused by moisture.</li>
+                  </ul>
+                </li>
+                <li>
+                  Audio Quality 
+                  <ul>
+                    <li>Richly detailed, signature Plantronics audio creates the right balance of rich bass, crisp highs, and natural midtones for your music and dual‐mic noise canceling for calls.</li>
+                  </ul>
+                </li>
+                <li>
+                  Lightweight, Memory‐Foam Comfort
+                  <ul>
+                    <li>Richly detailed, signature Plantronics audio creates the right balance of rich bass, crisp highs, and natural midtones for your music and dual‐mic noise canceling for calls.</li>
+                  </ul>
+                </li>
+                <div class="show-more">
+                  <li>
+                    18‐hour Streaming 
+                  </li>
+                  <li>
+                    Stream up to 100m/330ft 
+                  </li>
+                  <li>
+                    Smart Sensors 
+                  </li>
+                </div>
+                <li class="view-more">
+                  View More...
+                </li>
+                <img src="media/pltLogo.png" class="pltImage modalClick" onClick="video_url('https://www.youtube.com/embed/DZGi6coESYc');">
+              </ul>
+            </div>
+            <div class="col-6">
+              <div class="center">
+                <img src="media/product-2.png">
+              </div>
+            </div>
+          </div>
+          <div id="footer3"></div>
+        </div>
+        <div class="swiper-slide" id="container4">
+          <div class="row padded">
+            <div class="col-6">
+              <div id="main-header" class="header-3">BackBeat PRO+</div>
+              <div id="secondary-header">Bring your music to life.</div>
+              <h3>KEY FEATURES</h3>
+              <ul class="features">
+                <li>
+                  Bluetooth USB Adapter
+                  <ul>
+                    <li>The Class 1 Bluetooth wireless USB adapter brings high fidelity to the standard Bluetooth® experience from computers.</li>
+                  </ul>
+                </li>
+                <li>
+                  Audio Quality 
+                  <ul>
+                    <li>The Plantronics signature audio profile delivers a detailed balance of rich bass, crisp highs, and natural midtones from mobile devices, and the Bluetooth USB adapter brings the high-fidelity experience to computers.</li>
+                  </ul>
+                </li>
+                <li>
+                  Active Noise Canceling (ANC)
+                  <ul>
+                    <li>Immerse yourself in music and block out background noise while working, relaxing, and traveling with on-demand active noise-canceling (ANC) technology.</li>
+                  </ul>
+                </li>
+                <div class="show-more">
+                  <li>
+                    24-hour Streaming
+                  </li>
+                  <li>
+                    Stream up to 100m/330ft
+                  </li>
+                  <li>
+                    Smart Power Management 
+                  </li>
+                </div>
+                <li class="view-more">
+                  View More...
+                </li>
+                <img src="media/pltLogo.png" class="pltImage modalClick" onClick="video_url('https://www.youtube.com/embed/W7HlhCBPlDA');">
+              </ul>
+            </div>
+            <div class="col-6">
+              <div class="center">
+                <img src="media/product-3.png">
+              </div>
+            </div>
+          </div>
+          <div id="footer4"></div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+          pagination: '.swiper-pagination',
+          paginationClickable: true
+      });
+    </script>
+    <script>
+      $('ul li ul').hide();
+      
+      $('.show-more').hide();
+      
+      $('ul li').click(function() {
+          var _this = $(this);
+          _this.children().slideToggle();
+          $('ul > li').not(_this).children('ul').slideUp();
+      });
+      
+      $('.video').click(function() {
+          $('.video1').show();
+      });
+      
+      $.fn.toggleHTML = function(a, b) {
+          return this.html(function(_, html) {
+              return $.trim(html) === a ? b : a;
+          });
+      }
+      
+      $('li.view-more').click(function() {
+          var _this = $(this);
+          _this.prev().slideToggle();
+          $(this).toggleHTML('View More...', 'View Less...');
+      });
+      
+         (function(){
+      
+      		$('.modalClick').on('click', function(event) {
+      			event.preventDefault();
+      			//window.moveTo(150, 150);
+      			$('#overlay')
+      			.fadeIn()
+      			.find('#modal')
+      			.fadeIn();
+      			$('html, body').animate({
+      		        scrollTop: $("#modal").offset().top
+      		     }, 1000);
+      
+      		});
+            
+      		$('.close').on('click', function(event) {
+      			event.preventDefault();
+      			$('#overlay')
+      			.fadeOut()
+      			.find('#modal')
+      			.fadeOut();
+                  video_url("");
+      
+      		});
+      
+      		$( '#overlay' ).on('click', function(event) {
+      			event.preventDefault();
+      		    $('#overlay')
+      			.fadeOut()
+      			.find('#modal')
+      			.fadeOut();
+                  video_url("");
+      		});
+      
+              for(var i = 0; i <= 3; i++){
+                  $('span#product-'+ i +'').text($('.header-'+ i +'').text());
+              }
+      
+      		})();
+      
+              function video_url(url) {
+           	document.getElementById('frame').src = url;
+           	console.log(url);
+           }
+    
+    </script>
+    <script type="text/javascript" src="cordova.js"></script>
+  </body>
+</html>

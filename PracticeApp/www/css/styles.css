@@ -1,0 +1,219 @@
+* {
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+#container{
+    background: url("../media/background2.png") no-repeat;
+}
+#container2{
+    background: url("../media/background.jpg") no-repeat;
+}
+#container3{
+    background: url("../media/background2.png") no-repeat;
+}
+#container4{
+    background: url("../media/background.jpg") no-repeat;
+}
+#main-header {
+    font-size: 60px;
+}
+#secondary-header {
+    font-size: 30px;
+}
+#bbfit{
+    height: 400px;
+    width: 450px;
+    position: relative;
+    z-index: 2;
+    margin-top: 160px;
+}
+img{
+    height: 560px;
+    width: 400px;
+    position: relative;
+    z-index: 10;
+}
+.padded{
+    padding: 40px 20px 20px 20px;
+}
+.swiper-container{
+    height: 768px;
+    width: 1024px;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+        width: 16.66%;
+}
+.col-3 {
+        width: 25%;
+}
+.col-4 {
+        width: 33.33%;
+}
+.col-5 {
+        width: 41.66%;
+}
+.col-6 {
+        width: 50%;
+}
+.col-7 {
+        width: 58.33%;
+}
+.col-8 {
+        width: 66.66%;
+}
+.col-9 {
+        width: 75%;
+}
+.col-10 {
+        width: 83.33%;
+}
+.col-11 {
+        width: 91.66%;
+}
+.col-12 {
+        width: 100%;
+}
+#footer{
+    background-image: url("../media/woodgrain.jpg");
+    height: 275px;
+    background-repeat: no-repeat;
+    bottom: 110px;
+    position: relative;
+    z-index: 5;
+}
+#footer2{
+    background-image: url("../media/linoleum2.jpg");
+    height: 240px;
+    background-repeat: no-repeat;
+    bottom: 110px;
+    position: relative;
+}
+#footer3{
+    background-image: url("../media/linoleum3.jpg");
+    height: 240px;
+    background-repeat: no-repeat;
+    bottom: 110px;
+    position: relative;
+}
+#footer4{
+    background-image: url("../media/linoleum2.jpg");
+    height: 240px;
+    background-repeat: no-repeat;
+    bottom: 110px;
+    position: relative;
+}
+.features{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    margin-top: 0;
+    max-width: 450px;
+}
+.swiper-pagination-bullet > span {
+    font-size: 15px;
+    margin-top:0;
+}
+.swiper-pagination-bullet-active > span {
+    font-size: 18px;
+}
+.pltImage{
+    position: relative;
+    z-index: 20;
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 150px;
+    width:150px;
+}
+li{
+    margin-top:15px;
+}
+.features > li, div.show-more {
+    font-size: 20px;
+}
+.features > li > ul > li {
+    font-size: 15px;
+}
+h3{
+    margin-bottom: 0;
+}
+#overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+.poster {
+    height: 100px;
+    width: 200px;
+}
+#modal {
+    width: 680px;
+    background: #fff;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    top: 40%;
+    left: 40%;
+    margin-top: -200px;
+    margin-left: -200px;
+    z-index: 11;
+    display: none;
+}
+#modal .head {
+    background: #eee;
+    padding: 10px;
+}
+#modal iframe {
+    margin: 35px 15px 15px 15px;
+}
+#modal .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #db0020;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+#modal .close:hover {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #ff4747;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.inline-title{
+    white-space: nowrap;
+}
