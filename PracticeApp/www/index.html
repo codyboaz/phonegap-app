@@ -297,18 +297,14 @@
       			.fadeOut();
                   video_url("");
       		});
-      
-              for(var i = 0; i <= 3; i++){
-                  $('span#product-'+ i +'').text($('.header-'+ i +'').text());
-              }
-      
+            
       		})();
       
-              function video_url(url) {
+          function video_url(url) {
            	document.getElementById('frame').src = url;
            	console.log(url);
            }
-    
+
     </script>
     <script type="text/javascript" src="cordova.js"></script>
   </body>

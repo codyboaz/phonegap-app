@@ -1177,6 +1177,7 @@
             if (!s.params.pagination) return;
             if (s.paginationContainer && s.paginationContainer.length > 0) {
                 var paginationHTML = '';
+                var titles = ["BackBeat PRO 2", "BackBeat FIT", "BackBeat SENSE", "BackBeat PRO+"];
                 if (s.params.paginationType === 'bullets') {
                     var numberOfBullets = s.params.loop ? Math.ceil((s.slides.length - s.loopedSlides * 2) / s.params.slidesPerGroup) : s.snapGrid.length;
                     for (var i = 0; i < numberOfBullets; i++) {
@@ -1184,7 +1185,7 @@
                             paginationHTML += s.params.paginationBulletRender(s, i, s.params.bulletClass);
                         }
                         else {
-                            paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 100px; width:80px;"> <span id="product-' + i + '" class="inline-title"></span></div>';
+                            paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 100px; width:80px;"> <span class="inline-title">'+ titles[i] +'</span></div>';
                         }
                     }
                     s.paginationContainer.html(paginationHTML);
