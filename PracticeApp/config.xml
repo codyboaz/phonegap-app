@@ -9,5 +9,5 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <allow-navigation href="http://dnsmarket.net/*" />
+    <allow-navigation href="https://www.youtube.com/*" />
 </widget>
