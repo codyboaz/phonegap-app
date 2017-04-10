@@ -31,32 +31,32 @@
               <div id="secondary-header">From sound to silence and back.</div>
               <h3>KEY FEATURES</h3>
               <ul class="features">
-                <li>
+                <li class="main-feature">
                   Immersive, High-Res Sound
                   <ul>
                     <li>Immersive, high-res sound, and powerful speaker drivers deliver the right balance of rich bass, crisp highs, and natural mid-tones for your music.</li>
                   </ul>
                 </li>
-                <li>
+                <li class="main-feature">
                   Active Noise Cancelling (ANC)
                   <ul>
                     <li>Switch on active noise cancelling (ANC) to minimize ambient noise while working or traveling.</li>
                   </ul>
                 </li>
-                <li>
+                <li class="main-feature">
                   24-Hour Streaming
                   <ul>
                     <li>Enjoy up to 24 hours of wireless music, movies and calls before choosing the cabled connection or recharging.</li>
                   </ul>
                 </li>
                 <div class="show-more">
-                  <li>
+                  <li class="main-feature">
                     Wireless Freedom
                   </li>
-                  <li>
+                  <li class="main-feature">
                     Smart Power Management
                   </li>
-                  <li>
+                  <li class="main-feature">
                     Hear Your Surroundings
                   </li>
                 </div>
@@ -81,32 +81,32 @@
               <div id="secondary-header">As unstoppable as you are.</div>
               <h3>KEY FEATURES</h3>
               <ul class="features">
-                <li>
+                <li class="main-feature">
                   Stable, Comfortable Fit
                   <ul>
                     <li>Flexible design fits comfortably and stays put for all levels of exercise.</li>
                   </ul>
                 </li>
-                <li>
+                <li class="main-feature">
                   Sweatproof and Waterproof* Coating by P2i
                   <ul>
                     <li>Protected by a P2i nano-coating, these headphones deliver sweatproof durability and meet the IP57 rating for withstanding fresh water up to one meter for 30 minutes.</li>
                   </ul>
                 </li>
-                <li>
+                <li class="main-feature">
                   On-Ear Controls for Calls and Music
                   <ul>
                     <li>Easy controls let you keep moving while you control your music or calls.</li>
                   </ul>
                 </li>
                 <div class="show-more">
-                  <li>
+                  <li class="main-feature">
                     Safety-Oriented Eartip Design
                   </li>
-                  <li>
+                  <li class="main-feature">
                     Smartphone Armband
                   </li>
-                  <li>
+                  <li class="main-feature">
                     Up to Eight Hours of Listening Time 
                   </li>
                 </div>
@@ -131,32 +131,32 @@
               <div id="secondary-header">Welcome to nonstop listening.</div>
               <h3>KEY FEATURES</h3>
               <ul class="features">
-                <li>
+                <li class="main-feature">
                   Special Edition Splashproof Coating
                   <ul>
                     <li>These Special Edition headphones have a nano-coating by P2i applied during the manufacturing process to protect against damage caused by moisture.</li>
                   </ul>
                 </li>
-                <li>
+                <li class="main-feature">
                   Audio Quality 
                   <ul>
                     <li>Richly detailed, signature Plantronics audio creates the right balance of rich bass, crisp highs, and natural midtones for your music and dual‐mic noise canceling for calls.</li>
                   </ul>
                 </li>
-                <li>
+                <li class="main-feature">
                   Lightweight, Memory‐Foam Comfort
                   <ul>
                     <li>Richly detailed, signature Plantronics audio creates the right balance of rich bass, crisp highs, and natural midtones for your music and dual‐mic noise canceling for calls.</li>
                   </ul>
                 </li>
                 <div class="show-more">
-                  <li>
+                  <li class="main-feature">
                     18‐hour Streaming 
                   </li>
-                  <li>
+                  <li class="main-feature">
                     Stream up to 100m/330ft 
                   </li>
-                  <li>
+                  <li class="main-feature">
                     Smart Sensors 
                   </li>
                 </div>
@@ -181,32 +181,32 @@
               <div id="secondary-header">Bring your music to life.</div>
               <h3>KEY FEATURES</h3>
               <ul class="features">
-                <li>
+                <li class="main-feature">
                   Bluetooth USB Adapter
                   <ul>
                     <li>The Class 1 Bluetooth wireless USB adapter brings high fidelity to the standard Bluetooth® experience from computers.</li>
                   </ul>
                 </li>
-                <li>
+                <li class="main-feature">
                   Audio Quality 
                   <ul>
                     <li>The Plantronics signature audio profile delivers a detailed balance of rich bass, crisp highs, and natural midtones from mobile devices, and the Bluetooth USB adapter brings the high-fidelity experience to computers.</li>
                   </ul>
                 </li>
-                <li>
+                <li class="main-feature">
                   Active Noise Canceling (ANC)
                   <ul>
                     <li>Immerse yourself in music and block out background noise while working, relaxing, and traveling with on-demand active noise-canceling (ANC) technology.</li>
                   </ul>
                 </li>
                 <div class="show-more">
-                  <li>
+                  <li class="main-feature">
                     24-hour Streaming
                   </li>
-                  <li>
+                  <li class="main-feature">
                     Stream up to 100m/330ft
                   </li>
-                  <li>
+                  <li class="main-feature">
                     Smart Power Management 
                   </li>
                 </div>
@@ -242,7 +242,7 @@
       
       $('.show-more').hide();
       
-      $('ul li').click(function() {
+      $('.main-feature').click(function() {
           var _this = $(this);
           _this.children().slideToggle();
           $('ul > li').not(_this).children('ul').slideUp();
