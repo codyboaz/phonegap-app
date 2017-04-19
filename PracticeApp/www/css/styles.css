@@ -168,7 +168,7 @@ h3{
 #overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.5);
+    background: black;
     position: absolute;
     top: 0;
     left: 0;
@@ -181,50 +181,38 @@ h3{
 }
 #modal {
     width: 995px;
-    background: #fff;
+    background: rgba(0,0,0,.5);
     box-shadow: 0 0 10px #000;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    top: 27.5%;
+    top: 30%;
     left: 21%;
     margin-top: -200px;
     margin-left: -200px;
     z-index: 11;
     display: none;
-    height: 745px;
+    height: 720px;
 }
 #modal .head {
     background: #eee;
     padding: 10px;
 }
 #modal iframe {
-    margin: 35px 15px 15px 15px;
+    margin: 65px 15px 15px 15px;
 }
 #modal .close {
     position: absolute;
-    right: 5px;
-    top: 5px;
-    font-size: 12px;
+    right: 9px;
+    top: 8px;
+    font-size: 17px;
     font-weight: bold;
     background: #db0020;
-    padding: 5px 10px;
+    padding:12px 17px;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 100%;
 }
-#modal .close:hover {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    background: #ff4747;
-    color: #ffffff;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    border-radius: 30px;
-}
+
 .inline-title{
     white-space: nowrap;
 }
