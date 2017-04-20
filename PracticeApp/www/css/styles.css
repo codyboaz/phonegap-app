@@ -10,6 +10,7 @@
 }
 .main-feature {
     font-size: 19px;
+    margin-top: 10px;
 }
 #container{
     background: url("../media/background2.png") no-repeat;
@@ -36,7 +37,7 @@
     z-index: 2;
     margin-top: 160px;
 }
-img{
+.prodImg{
     height: 560px;
     width: 400px;
     position: relative;
@@ -154,9 +155,6 @@ width: 83.33%;
     height: 150px;
     width:150px;
 }
-li{
-    margin-top:15px;
-}
 .features > li, div.show-more {
     font-size: 20px;
 }
@@ -273,7 +271,7 @@ h3{
 }
 #spot8 {
     position: absolute;
-    top: 59%;
+    top: 58%;
     right: 41%;
     z-index:10;
 }
@@ -329,4 +327,44 @@ h3{
     0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
     50% {opacity: 1.0;}
     100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+#screensaver { 
+    position: absolute; 
+    width: 100%; 
+    height:100%; 
+    left:0px; 
+    top: 0px; 
+    display: none;
+    z-index:9999;
+}
+
+.slideShowContainer {
+    position:absolute;
+    width:1024px;
+    height:768px;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:auto;
+    background:#000;
+    overflow:hidden;
+}
+
+.slideShow {
+    position:absolute;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+.slideShow > li {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+
+.view-more{
+    margin-top: 10px;
 }

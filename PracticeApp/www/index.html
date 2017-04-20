@@ -7,6 +7,10 @@
       <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
       <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
       <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
       <!-- Link Swiper's CSS -->
       <link rel="stylesheet" href="css/swiper.css">
       <link rel="stylesheet" href="css/styles.css">
@@ -14,8 +18,18 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
    </head>
    <body>
+       
       <!-- Swiper -->
       <div class="swiper-container">
+          <div id="screensaver">
+                          <div class="slideShowContainer">
+                <ul class="slideShow">
+                    <li><img src="media/slide1.jpg"></li>
+                    <li><img src="media/slide2.jpg"></li>
+                    <li><img src="media/slide3.jpg"></li>
+                </ul>
+            </div>
+          </div>
          <div id="overlay">
             <div id="modal">
                <span class="close">X</span>
@@ -69,7 +83,7 @@
                      <div class="center">
                         <div class="spot-container">
                            <div class="product">
-                              <img src="media/product-0.png">
+                              <img src="media/product-0.png" class="prodImg">
                            </div>
                            <div id="spot1" class="spot" style="display:none"></div>
                            <div id="spot2" class="spot" style="display:none"></div>
@@ -126,7 +140,7 @@
                      <div class="center">
                         <div class="spot-container">
                            <div class="product">
-                              <img src="media/product-1.png" id="bbfit">
+                              <img src="media/product-1.png" id="bbfit" class="prodImg">
                            </div>
                            <div id="spot4" class="spot" style="display:none"></div>
                            <div id="spot5" class="spot" style="display:none"></div>
@@ -183,7 +197,7 @@
                      <div class="center">
                         <div class="spot-container">
                            <div class="product">
-                              <img src="media/product-2.png">
+                              <img src="media/product-2.png" class="prodImg">
                            </div>
                            <div id="spot7" class="spot" style="display:none"></div>
                            <div id="spot8" class="spot" style="display:none"></div>
@@ -240,7 +254,7 @@
                      <div class="center">
                         <div class="spot-container">
                            <div class="product">
-                              <img src="media/product-3.png">
+                              <img src="media/product-3.png" class="prodImg">
                            </div>
                            <div id="spot10" class="spot" style="display:none"></div>
                            <div id="spot11" class="spot" style="display:none"></div>
@@ -258,6 +272,80 @@
       <!-- Swiper JS -->
       <script src="js/swiper.js"></script>
       <!-- Initialize Swiper -->
+      
+      <script>
+
+              var mousetimeout;
+                var screensaver_active = false;
+                var idletime = 20;
+                var slides = $('.slideShow > li');
+                var slideCount = 0;
+                var totalSlides = slides.length;
+                var slideCache = [];
+
+                $(function(){
+
+                (function preloader(){
+                    if(slideCount < totalSlides){
+                        // load images
+                        slideCache[slideCount] = new Image();
+                        slideCache[slideCount].src = slides.eq(slideCount).find('img').attr('src');
+                        slideCache[slideCount].onload = function(){
+                            slideCount++;
+                            preloader();
+                        }
+                    } else {
+                        // run the slideshow
+                        slideCount = 0;
+                    }
+                }());
+                 });
+
+                function show_screensaver(){
+                    $('#screensaver').fadeIn();
+                    screensaver_active = true;
+                    screensaver_animation();
+                }
+
+                function stop_screensaver(){
+                    $('#screensaver').fadeOut();
+                    screensaver_active = false;
+                }
+
+                function SlideShow(){
+                    slides.eq(slideCount).fadeIn(1000).delay(5000).fadeOut(1000, function(){
+                        slideCount < totalSlides - 1 ? slideCount ++ : slideCount = 0;
+                        SlideShow();
+                    });
+                }
+
+                (function(){
+                    mousetimeout = setTimeout(function(){
+                            show_screensaver();
+                        }, 1000 * idletime); // 5 secs
+                })();
+                
+                    $(document).click(function(){
+                        clearTimeout(mousetimeout);
+                        
+                        if (screensaver_active) {
+                            stop_screensaver();
+                        }
+
+                        mousetimeout = setTimeout(function(){
+                            show_screensaver();
+                        }, 1000 * idletime); // 5 secs			
+                    });
+
+
+                function screensaver_animation(){
+                    if (screensaver_active) {
+                        SlideShow();
+                    }
+                }
+
+      </script>
+
       <script>
          var swiper = new Swiper('.swiper-container', {
              pagination: '.swiper-pagination',
