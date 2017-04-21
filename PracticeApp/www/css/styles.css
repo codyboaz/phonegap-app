@@ -152,8 +152,8 @@ width: 83.33%;
     z-index: 20;
     border-radius: 50%;
     margin-top: 20px;
-    height: 150px;
-    width:150px;
+    height: 100px;
+    width: 100px;
 }
 .features > li, div.show-more {
     font-size: 20px;
@@ -163,6 +163,7 @@ width: 83.33%;
     margin-top: 10px;
     margin-left: -36px;
     list-style-type: none;
+    width: 80%;
 }
 h3{
     margin-bottom: 0;

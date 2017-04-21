@@ -1185,10 +1185,14 @@
                             paginationHTML += s.params.paginationBulletRender(s, i, s.params.bulletClass);
                         }
                         else {
-                            if(titles[i] === "BackBeat FIT"){
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 72px; width:105px;"> <span class="inline-title">'+ titles[i] +'</span></div>';
-                            } else{
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 100px; width:80px;"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                            if(i === 0) {
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                            } else if(i === 1) {
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 72px; width:105px;"> <span class="inline-title" style="margin-left: 15px">'+ titles[i] +'</span></div>';
+                            } else if(i === 2) {
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                            } else {
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px"> <span class="inline-title">'+ titles[i] +'</span></div>';
                             }
                             
                         }
