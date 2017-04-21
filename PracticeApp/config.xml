@@ -10,4 +10,5 @@
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="https://www.youtube.com/*" />
+    <icon src="icon.png" />
 </widget>
