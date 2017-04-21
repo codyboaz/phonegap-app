@@ -19,10 +19,10 @@
     background: url("../media/background.jpg") no-repeat;
 }
 #container3{
-    background: url("../media/background2.png") no-repeat;
+    background: url("../media/background3.png") no-repeat;
 }
 #container4{
-    background: url("../media/background.jpg") no-repeat;
+    background: url("../media/background4.png") no-repeat;
 }
 #main-header {
     font-size: 60px;
@@ -120,14 +120,14 @@ width: 83.33%;
     position: relative;
 }
 #footer3{
-    background-image: url("../media/linoleum3.jpg");
+    background-image: url("../media/linoleum1.jpg");
     height: 240px;
     background-repeat: no-repeat;
     bottom: 110px;
     position: relative;
 }
 #footer4{
-    background-image: url("../media/linoleum2.jpg");
+    background-image: url("../media/linoleum3.jpg");
     height: 240px;
     background-repeat: no-repeat;
     bottom: 110px;
@@ -160,6 +160,9 @@ width: 83.33%;
 }
 .features > li > ul > li {
     font-size: 15px;
+    margin-top: 10px;
+    margin-left: -36px;
+    list-style-type: none;
 }
 h3{
     margin-bottom: 0;

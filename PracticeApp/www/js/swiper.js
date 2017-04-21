@@ -1185,7 +1185,12 @@
                             paginationHTML += s.params.paginationBulletRender(s, i, s.params.bulletClass);
                         }
                         else {
-                            paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 100px; width:80px;"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                            if(titles[i] === "BackBeat FIT"){
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 72px; width:105px;"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                            } else{
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 100px; width:80px;"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                            }
+                            
                         }
                     }
                     s.paginationContainer.html(paginationHTML);
