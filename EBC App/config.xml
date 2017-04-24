@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.plt.prac" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Plantronics EBC</name>
+    <description>
+        This app is used in the Plantronics EBC. It is used to assist in the display of the products shown in their displays.
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="https://www.youtube.com/*" />
+    
+    <!-- Icons -->
+    <icon src="icons/icon.png" />
+    
+    <!-- iPhone 6 / 6+ -->
+    <icon src="icons/icon-60@3x.png" platform="ios" width="180" height="180" />
+
+    <!-- iPhone / iPod Touch  -->
+    <icon src="icons/icon-60.png" platform="ios" width="60" height="60" />
+    <icon src="icons/icon-60@2x.png" platform="ios" width="120" height="120" />
+
+    <!-- iPad -->
+    <icon src="icons/icon-76.png" platform="ios" width="76" height="76" />
+    <icon src="icons/icon-76@2x.png" platform="ios" width="152" height="152" />
+    <icon src="icons/icon-83.5@2x.png" platform="ios" width="167" height="167" />
+
+    <!-- Settings Icon -->
+    <icon src="icons/icon-small.png" platform="ios" width="29" height="29" />
+    <icon src="icons/icon-small@2x.png" platform="ios" width="58" height="58" />
+    <icon src="icons/icon-small@3x.png" platform="ios" width="87" height="87" />
+
+    <!-- Spotlight Icon -->
+    <icon src="icons/icon-40.png" platform="ios" width="40" height="40" />
+    <icon src="icons/icon-40@2x.png" platform="ios" width="80" height="80" />
+    <icon src="icons/icon-40@3x.png" platform="ios" width="120" height="120" />
+</widget>
