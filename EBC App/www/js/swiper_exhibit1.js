@@ -1186,13 +1186,13 @@
                         }
                         else {
                             if(i === 0) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px; margin-bottom: -4px"> <span class="inline-title">'+ titles[i] +'</span></div>';
                             } else if(i === 1) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 72px; width:105px;"> <span class="inline-title" style="margin-left: 15px">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 72px; width:105px; margin-bottom: -7px"> <span class="inline-title" style="margin-left: 15px">'+ titles[i] +'</span></div>';
                             } else if(i === 2) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px; margin-bottom: -7px"> <span class="inline-title">'+ titles[i] +'</span></div>';
                             } else {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 9px; margin-bottom: -7px"> <span class="inline-title">'+ titles[i] +'</span></div>';
                             }
                             
                         }
