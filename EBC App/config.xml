@@ -9,10 +9,12 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+
+    <!--ALLOW YOUTUBE ACCESS-->
     <allow-navigation href="https://www.youtube.com/*" />
     
     <!-- ICONS -->
-    
+
     <icon src="icons/icon.png" />
     
     <!-- iPhone 6 / 6+ -->
