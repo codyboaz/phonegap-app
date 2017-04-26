@@ -242,7 +242,7 @@ button.swiper-pagination-bullet {
   display: block;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 105px;
+  margin: 0 110px;
   padding-top: 33px;
 }
 /* Progress */

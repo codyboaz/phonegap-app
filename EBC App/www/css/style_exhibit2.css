@@ -13,16 +13,16 @@
     margin-top: 10px;
 }
 #container{
-    background: url("../media/exhibit1/background2.png") no-repeat;
+    background: url("../media/exhibit2/background1.png") no-repeat;
 }
 #container2{
-    background: url("../media/exhibit1/background1.png") no-repeat;
+    background: url("../media/exhibit2/background2.png") no-repeat;
 }
 #container3{
-    background: url("../media/exhibit1/background3.png") no-repeat;
+    background: url("../media/exhibit2/background3.png") no-repeat;
 }
 #container4{
-    background: url("../media/exhibit1/background4.png") no-repeat;
+    background: url("../media/exhibit2/background4.png") no-repeat;
 }
 #main-header {
     font-size: 60px;
@@ -30,17 +30,16 @@
 #secondary-header {
     font-size: 30px;
 }
-#bbfit{
-    height: 400px;
-    width: 450px;
-    position: relative;
-    z-index: 2;
-    margin-top: 160px;
+#calisto{
+    height: 345px;
+    margin-top: 90px;
+    position: absolute;
+    z-index: 10;
 }
 .prodImg{
-    height: 560px;
-    width: 400px;
-    position: relative;
+    height: 450px;
+    margin-top: 90px;
+    position: absolute;
     z-index: 10;
 }
 .padded{
@@ -105,32 +104,32 @@ width: 83.33%;
     width: 100%;
 }
 #footer{
-    background-image: url("../media/woodgrain.jpg");
+    background-image: url("../media/woodgrain3.jpg");
     height: 275px;
     background-repeat: no-repeat;
-    bottom: 110px;
+    bottom: -37.25%;
     position: relative;
     z-index: 5;
 }
 #footer2{
-    background-image: url("../media/linoleum2.jpg");
+    background-image: url("../media/linoleum4.jpg");
     height: 240px;
     background-repeat: no-repeat;
-    bottom: 110px;
+    bottom: -39%;
     position: relative;
 }
 #footer3{
-    background-image: url("../media/linoleum1.jpg");
+    background-image: url("../media/tile.jpg");
     height: 240px;
     background-repeat: no-repeat;
-    bottom: 110px;
+    bottom: -32%;
     position: relative;
 }
 #footer4{
-    background-image: url("../media/linoleum3.jpg");
+    background-image: url("../media/woodgrain2.jpg");
     height: 240px;
     background-repeat: no-repeat;
-    bottom: 110px;
+    bottom: -39%;
     position: relative;
 }
 .features{
@@ -233,74 +232,74 @@ h3{
 }
 #spot1 {
     position: absolute;
-    bottom: 32%;
-    left: 6%;
+    margin-top: 41%;
+    left: 20%;
     z-index:10;
 }
 #spot2 {
     position: absolute;
-    bottom: 41%;
-    left: 48%;
+    margin-top: 25%;
+    left: 33%;
     z-index:10;
 }
 #spot3 {
     position: absolute;
-    top: 64%;
-    right: 66%;
+    margin-top: 88%;
+    right: 67%;
     z-index:10;
 }
 #spot4 {
     position: absolute;
-    bottom: 60%;
-    left: 0%;
+    margin-top: 56%;
+    left: 46%;
     z-index:10;
 }
 #spot5 {
     position: absolute;
-    bottom: 20%;
-    left: 65%;
+    margin-top: 89%;
+    left: 68%;
     z-index:10;
 }
 #spot6 {
     position: absolute;
-    top: 63%;
-    right: 49%;
+    margin-top: 9%;
+    right: 53%;
     z-index:10;
 }
 #spot7 {
     position: absolute;
-    bottom: 24%;
-    left: 20%;
+    margin-top: 45%;
+    left: 14%;
     z-index:10;
 }
 #spot8 {
     position: absolute;
-    top: 54%;
-    right: 36%;
+    margin-top: 34%;
+    right: 53%;
     z-index:10;
 }
 #spot9 {
     position: absolute;
-    bottom: 82%;
-    left: 17%;
+    margin-top: 20%;
+    left: 48%;
     z-index:10;
 }
 #spot10 {
     position: absolute;
-    bottom: 29%;
-    left: 14%;
+    margin-top: 10%;
+    left: 52%;
     z-index:10;
 }
 #spot11 {
     position: absolute;
-    bottom: 30%;
-    left: 47%;
+    margin-top: 38%;
+    left: 19%;
     z-index:10;
 }
 #spot12 {
     position: absolute;
-    top: 33%;
-    right: 55%;
+    margin-top: 58%;
+    right: 21%;
     z-index:10;
 }
 .element {
@@ -425,4 +424,7 @@ h3{
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+.header-0{
+    margin-top: -25px;
 }
