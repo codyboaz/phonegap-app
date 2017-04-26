@@ -78,9 +78,9 @@
                                     <div class="product">
                                         <img src="media/exhibit2/product-0.png" class="prodImg">
                                     </div>
-                                    <div id="spot1" class="spot" style="display:none"></div>
-                                    <div id="spot2" class="spot" style="display:none"></div>
-                                    <div id="spot3" class="spot" style="display:none"></div>
+                                    <div id="spot1-off" class="spot"></div>
+                                    <div id="spot2-off" class="spot"></div>
+                                    <div id="spot3-off" class="spot"></div>
                                 </div>
                             </div>
                         </div>
@@ -136,9 +136,9 @@
                                     <div class="product">
                                         <img src="media/exhibit2/product-1.png" class="prodImg">
                                     </div>
-                                    <div id="spot4" class="spot" style="display:none"></div>
-                                    <div id="spot5" class="spot" style="display:none"></div>
-                                    <div id="spot6" class="spot" style="display:none"></div>
+                                    <div id="spot4-off" class="spot"></div>
+                                    <div id="spot5-off" class="spot"></div>
+                                    <div id="spot6-off" class="spot"></div>
                                 </div>
                             </div>
                         </div>
@@ -194,9 +194,9 @@
                                     <div class="product">
                                         <img src="media/exhibit2/product-2.png" id="calisto" class="prodImg">
                                     </div>
-                                    <div id="spot7" class="spot" style="display:none"></div>
-                                    <div id="spot8" class="spot" style="display:none"></div>
-                                    <div id="spot9" class="spot" style="display:none"></div>
+                                    <div id="spot7-off" class="spot"></div>
+                                    <div id="spot8-off" class="spot"></div>
+                                    <div id="spot9-off" class="spot"></div>
                                 </div>
                             </div>
                         </div>
@@ -252,9 +252,9 @@
                                     <div class="product">
                                         <img src="media/exhibit2/product-3.png" class="prodImg">
                                     </div>
-                                    <div id="spot10" class="spot" style="display:none"></div>
-                                    <div id="spot11" class="spot" style="display:none"></div>
-                                    <div id="spot12" class="spot" style="display:none"></div>
+                                    <div id="spot10-off" class="spot"></div>
+                                    <div id="spot11-off" class="spot"></div>
+                                    <div id="spot12-off" class="spot"></div>
                                 </div>
                             </div>
                         </div>
@@ -357,186 +357,235 @@
                 switch ($(this)[0].id)
                 {
                   case "feature1":
-                    $("#spot1").toggle();
-                    $("#spot2").hide();
-                    $("#spot3").hide();
-                    $("#spot4").hide();
-                    $("#spot5").hide();
-                    $("#spot6").hide();
-                    $("#spot7").hide();
-                    $("#spot8").hide();
-                    $("#spot9").hide();
-                    $("#spot10").hide();
-                    $("#spot11").hide();
-                    $("#spot12").hide();
+                    if($("#spot1-off").length == 0){
+                        $("#spot1").attr("id", "spot1-off");
+                    } else {
+                        $("#spot1-off").attr("id", "spot1");
+                    }    
+                    $("#spot2").attr("id", "spot2-off");
+                    $("#spot3").attr("id", "spot3-off");
+                    $("#spot4").attr("id", "spot4-off");
+                    $("#spot5").attr("id", "spot5-off");
+                    $("#spot6").attr("id", "spot6-off");
+                    $("#spot7").attr("id", "spot7-off");
+                    $("#spot8").attr("id", "spot8-off");
+                    $("#spot9").attr("id", "spot9-off");
+                    $("#spot10").attr("id", "spot10-off");
+                    $("#spot11").attr("id", "spot11-off");
+                    $("#spot12").attr("id", "spot12-off");
                     break;
                   case "feature2":
-                    $("#spot1").hide();
-                    $("#spot2").toggle();
-                    $("#spot3").hide();
-                    $("#spot4").hide();
-                    $("#spot5").hide();
-                    $("#spot6").hide();
-                    $("#spot7").hide();
-                    $("#spot8").hide();
-                    $("#spot9").hide();
-                    $("#spot10").hide();
-                    $("#spot11").hide();
-                    $("#spot12").hide();
+                    $("#spot1").attr("id", "spot1-off");
+
+                    if($("#spot2-off").length == 0){
+                        $("#spot2").attr("id", "spot2-off");
+                    } else {
+                        $("#spot2-off").attr("id", "spot2");
+                    }
+                    $("#spot3").attr("id", "spot3-off");
+                    $("#spot4").attr("id", "spot4-off");
+                    $("#spot5").attr("id", "spot5-off");
+                    $("#spot6").attr("id", "spot6-off");
+                    $("#spot7").attr("id", "spot7-off");
+                    $("#spot8").attr("id", "spot8-off");
+                    $("#spot9").attr("id", "spot9-off");
+                    $("#spot10").attr("id", "spot10-off");
+                    $("#spot11").attr("id", "spot11-off");
+                    $("#spot12").attr("id", "spot12-off");
                     break;
                   case "feature3":
-                    $("#spot1").hide();
-                    $("#spot2").hide();
-                    $("#spot3").toggle();
-                    $("#spot4").hide();
-                    $("#spot5").hide();
-                    $("#spot6").hide();
-                    $("#spot7").hide();
-                    $("#spot8").hide();
-                    $("#spot9").hide();
-                    $("#spot10").hide();
-                    $("#spot11").hide();
-                    $("#spot12").hide();
+                    $("#spot1").attr("id", "spot1-off");
+                    $("#spot2").attr("id", "spot2-off");
+                    if($("#spot3-off").length == 0){
+                        $("#spot3").attr("id", "spot3-off");
+                    } else {
+                        $("#spot3-off").attr("id", "spot3");
+                    }
+                    $("#spot4").attr("id", "spot4-off");
+                    $("#spot5").attr("id", "spot5-off");
+                    $("#spot6").attr("id", "spot6-off");
+                    $("#spot7").attr("id", "spot7-off");
+                    $("#spot8").attr("id", "spot8-off");
+                    $("#spot9").attr("id", "spot9-off");
+                    $("#spot10").attr("id", "spot10-off");
+                    $("#spot11").attr("id", "spot11-off");
+                    $("#spot12").attr("id", "spot12-off");
                     break;
                   case "feature4":
-                    $("#spot1").hide();
-                    $("#spot2").hide();
-                    $("#spot3").hide();
-                    $("#spot4").toggle();
-                    $("#spot5").hide();
-                    $("#spot6").hide();
-                    $("#spot7").hide();
-                    $("#spot8").hide();
-                    $("#spot9").hide();
-                    $("#spot10").hide();
-                    $("#spot11").hide();
-                    $("#spot12").hide();
+                    $("#spot1").attr("id", "spot1-off");
+                    $("#spot2").attr("id", "spot2-off");
+                    $("#spot3").attr("id", "spot3-off");
+                    if($("#spot4-off").length == 0){
+                        $("#spot4").attr("id", "spot4-off");
+                    } else {
+                        $("#spot4-off").attr("id", "spot4");
+                    }
+                    $("#spot5").attr("id", "spot5-off");
+                    $("#spot6").attr("id", "spot6-off");
+                    $("#spot7").attr("id", "spot7-off");
+                    $("#spot8").attr("id", "spot8-off");
+                    $("#spot9").attr("id", "spot9-off");
+                    $("#spot10").attr("id", "spot10-off");
+                    $("#spot11").attr("id", "spot11-off");
+                    $("#spot12").attr("id", "spot12-off");
                     break;
                   case "feature5":
-                    $("#spot1").hide();
-                    $("#spot2").hide();
-                    $("#spot3").hide();
-                    $("#spot4").hide();
-                    $("#spot5").toggle();
-                    $("#spot6").hide();
-                    $("#spot7").hide();
-                    $("#spot8").hide();
-                    $("#spot9").hide();
-                    $("#spot10").hide();
-                    $("#spot11").hide();
-                    $("#spot12").hide();
+                    $("#spot1").attr("id", "spot1-off");
+                    $("#spot2").attr("id", "spot2-off");
+                    $("#spot3").attr("id", "spot3-off");
+                    $("#spot4").attr("id", "spot4-off");
+                    if($("#spot5-off").length == 0){
+                        $("#spot5").attr("id", "spot5-off");
+                    } else {
+                        $("#spot5-off").attr("id", "spot5");
+                    }
+                    $("#spot6").attr("id", "spot6-off");
+                    $("#spot7").attr("id", "spot7-off");
+                    $("#spot8").attr("id", "spot8-off");
+                    $("#spot9").attr("id", "spot9-off");
+                    $("#spot10").attr("id", "spot10-off");
+                    $("#spot11").attr("id", "spot11-off");
+                    $("#spot12").attr("id", "spot12-off");
                     break;
                   case "feature6":
-                    $("#spot1").hide();
-                    $("#spot2").hide();
-                    $("#spot3").hide();
-                    $("#spot4").hide();
-                    $("#spot5").hide();
-                    $("#spot6").toggle();
-                    $("#spot7").hide();
-                    $("#spot8").hide();
-                    $("#spot9").hide();
-                    $("#spot10").hide();
-                    $("#spot11").hide();
-                    $("#spot12").hide();
+                    $("#spot1").attr("id", "spot1-off");
+                    $("#spot2").attr("id", "spot2-off");
+                    $("#spot3").attr("id", "spot3-off");
+                    $("#spot4").attr("id", "spot4-off");
+                    $("#spot5").attr("id", "spot5-off");
+                    if($("#spot6-off").length == 0){
+                        $("#spot6").attr("id", "spot6-off");
+                    } else {
+                        $("#spot6-off").attr("id", "spot6");
+                    }
+                    $("#spot7").attr("id", "spot7-off");
+                    $("#spot8").attr("id", "spot8-off");
+                    $("#spot9").attr("id", "spot9-off");
+                    $("#spot10").attr("id", "spot10-off");
+                    $("#spot11").attr("id", "spot11-off");
+                    $("#spot12").attr("id", "spot12-off");
                     break;
                   case "feature7":
-                    $("#spot1").hide();
-                    $("#spot2").hide();
-                    $("#spot3").hide();
-                    $("#spot4").hide();
-                    $("#spot5").hide();
-                    $("#spot6").hide();
-                    $("#spot7").toggle();
-                    $("#spot8").hide();
-                    $("#spot9").hide();
-                    $("#spot10").hide();
-                    $("#spot11").hide();
-                    $("#spot12").hide();
+                    $("#spot1").attr("id", "spot1-off");
+                    $("#spot2").attr("id", "spot2-off");
+                    $("#spot3").attr("id", "spot3-off");
+                    $("#spot4").attr("id", "spot4-off");
+                    $("#spot5").attr("id", "spot5-off");
+                    $("#spot6").attr("id", "spot6-off");
+                    if($("#spot7-off").length == 0){
+                        $("#spot7").attr("id", "spot7-off");
+                    } else {
+                        $("#spot7-off").attr("id", "spot7");
+                    }
+                    $("#spot8").attr("id", "spot8-off");
+                    $("#spot9").attr("id", "spot9-off");
+                    $("#spot10").attr("id", "spot10-off");
+                    $("#spot11").attr("id", "spot11-off");
+                    $("#spot12").attr("id", "spot12-off");
                     break;
                 case "feature8":
-                    $("#spot1").hide();
-                    $("#spot2").hide();
-                    $("#spot3").hide();
-                    $("#spot4").hide();
-                    $("#spot5").hide();
-                    $("#spot6").hide();
-                    $("#spot7").hide();
-                    $("#spot8").toggle();
-                    $("#spot9").hide();
-                    $("#spot10").hide();
-                    $("#spot11").hide();
-                    $("#spot12").hide();
+                    $("#spot1").attr("id", "spot1-off");
+                    $("#spot2").attr("id", "spot2-off");
+                    $("#spot3").attr("id", "spot3-off");
+                    $("#spot4").attr("id", "spot4-off");
+                    $("#spot5").attr("id", "spot5-off");
+                    $("#spot6").attr("id", "spot6-off");
+                    $("#spot7").attr("id", "spot7-off");
+                    if($("#spot8-off").length == 0){
+                        $("#spot8").attr("id", "spot8-off");
+                    } else {
+                        $("#spot8-off").attr("id", "spot8");
+                    }
+                    $("#spot9").attr("id", "spot9-off");
+                    $("#spot10").attr("id", "spot10-off");
+                    $("#spot11").attr("id", "spot11-off");
+                    $("#spot12").attr("id", "spot12-off");
                     break;
                 case "feature9":
-                    $("#spot1").hide();
-                    $("#spot2").hide();
-                    $("#spot3").hide();
-                    $("#spot4").hide();
-                    $("#spot5").hide();
-                    $("#spot6").hide();
-                    $("#spot7").hide();
-                    $("#spot8").hide();
-                    $("#spot9").toggle();
-                    $("#spot10").hide();
-                    $("#spot11").hide();
-                    $("#spot12").hide();
+                    $("#spot1").attr("id", "spot1-off");
+                    $("#spot2").attr("id", "spot2-off");
+                    $("#spot3").attr("id", "spot3-off");
+                    $("#spot4").attr("id", "spot4-off");
+                    $("#spot5").attr("id", "spot5-off");
+                    $("#spot6").attr("id", "spot6-off");
+                    $("#spot7").attr("id", "spot7-off");
+                    $("#spot8").attr("id", "spot8-off");
+                    if($("#spot9-off").length == 0){
+                        $("#spot9").attr("id", "spot9-off");
+                    } else {
+                        $("#spot9-off").attr("id", "spot9");
+                    }
+                    $("#spot10").attr("id", "spot10-off");
+                    $("#spot11").attr("id", "spot11-off");
+                    $("#spot12").attr("id", "spot12-off");
                     break;
                   case "feature10":
-                    $("#spot1").hide();
-                    $("#spot2").hide();
-                    $("#spot3").hide();
-                    $("#spot4").hide();
-                    $("#spot5").hide();
-                    $("#spot6").hide();
-                    $("#spot7").hide();
-                    $("#spot8").hide();
-                    $("#spot9").hide();
-                    $("#spot10").toggle();
-                    $("#spot11").hide();
-                    $("#spot12").hide();
+                    $("#spot1").attr("id", "spot1-off");
+                    $("#spot2").attr("id", "spot2-off");
+                    $("#spot3").attr("id", "spot3-off");
+                    $("#spot4").attr("id", "spot4-off");
+                    $("#spot5").attr("id", "spot5-off");
+                    $("#spot6").attr("id", "spot6-off");
+                    $("#spot7").attr("id", "spot7-off");
+                    $("#spot8").attr("id", "spot8-off");
+                    $("#spot9").attr("id", "spot9-off");
+                    if($("#spot10-off").length == 0){
+                        $("#spot10").attr("id", "spot10-off");
+                    } else {
+                        $("#spot10-off").attr("id", "spot10");
+                    }
+                    $("#spot11").attr("id", "spot11-off");
+                    $("#spot12").attr("id", "spot12-off");
                     break;
                 case "feature11":
-                    $("#spot1").hide();
-                    $("#spot2").hide();
-                    $("#spot3").hide();
-                    $("#spot4").hide();
-                    $("#spot5").hide();
-                    $("#spot6").hide();
-                    $("#spot7").hide();
-                    $("#spot8").hide();
-                    $("#spot9").hide();
-                    $("#spot10").hide();
-                    $("#spot11").toggle();
-                    $("#spot12").hide();
+                    $("#spot1").attr("id", "spot1-off");
+                    $("#spot2").attr("id", "spot2-off");
+                    $("#spot3").attr("id", "spot3-off");
+                    $("#spot4").attr("id", "spot4-off");
+                    $("#spot5").attr("id", "spot5-off");
+                    $("#spot6").attr("id", "spot6-off");
+                    $("#spot7").attr("id", "spot7-off");
+                    $("#spot8").attr("id", "spot8-off");
+                    $("#spot9").attr("id", "spot9-off");
+                    $("#spot10").attr("id", "spot10-off");
+                    if($("#spot11-off").length == 0){
+                        $("#spot11").attr("id", "spot11-off");
+                    } else {
+                        $("#spot11-off").attr("id", "spot11");
+                    }
+                    $("#spot12").attr("id", "spot12-off");
                     break;
                 case "feature12":
-                    $("#spot1").hide();
-                    $("#spot2").hide();
-                    $("#spot3").hide();
-                    $("#spot4").hide();
-                    $("#spot5").hide();
-                    $("#spot6").hide();
-                    $("#spot7").hide();
-                    $("#spot8").hide();
-                    $("#spot9").hide();
-                    $("#spot10").hide();
-                    $("#spot11").hide();
-                    $("#spot12").toggle();
+                    $("#spot1").attr("id", "spot1-off");
+                    $("#spot2").attr("id", "spot2-off");
+                    $("#spot3").attr("id", "spot3-off");
+                    $("#spot4").attr("id", "spot4-off");
+                    $("#spot5").attr("id", "spot5-off");
+                    $("#spot6").attr("id", "spot6-off");
+                    $("#spot7").attr("id", "spot7-off");
+                    $("#spot8").attr("id", "spot8-off");
+                    $("#spot9").attr("id", "spot9-off");
+                    $("#spot10").attr("id", "spot10-off");
+                    $("#spot11").attr("id", "spot11-off");
+                    if($("#spot12-off").length == 0){
+                        $("#spot12").attr("id", "spot12-off");
+                    } else {
+                        $("#spot12-off").attr("id", "spot12");
+                    }
                     break;
                   default:
-                    $("#spot1").hide();
-                    $("#spot2").hide();
-                    $("#spot3").hide();
-                    $("#spot4").hide();
-                    $("#spot5").hide();
-                    $("#spot6").hide();
-                    $("#spot7").hide();
-                    $("#spot8").hide();
-                    $("#spot9").hide();
-                    $("#spot10").hide();
-                    $("#spot11").hide();
-                    $("#spot12").hide();
+                    $("#spot1").attr("id", "spot1-off");
+                    $("#spot2").attr("id", "spot2-off");
+                    $("#spot3").attr("id", "spot3-off");
+                    $("#spot4").attr("id", "spot4-off");
+                    $("#spot5").attr("id", "spot5-off");
+                    $("#spot6").attr("id", "spot6-off");
+                    $("#spot7").attr("id", "spot7-off");
+                    $("#spot8").attr("id", "spot8-off");
+                    $("#spot9").attr("id", "spot9-off");
+                    $("#spot10").attr("id", "spot10-off");
+                    $("#spot11").attr("id", "spot11-off");
+                    $("#spot12").attr("id", "spot12-off");
                       break;
                 }
             
