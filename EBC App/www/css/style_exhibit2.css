@@ -205,12 +205,12 @@ h3{
 }
 #modal .close {
     position: absolute;
-    right: 9px;
-    top: 8px;
-    font-size: 17px;
+    right: 2px;
+    top: 2px;
+    font-size: 10px;
     font-weight: bold;
     background: #db0020;
-    padding:12px 17px;
+    padding:12px 15px;
     cursor: pointer;
     border-radius: 100%;
 }
