@@ -271,7 +271,7 @@
         <script>
             var mousetimeout;
               var screensaver_active = false;
-              var idletime = 10;
+              var idletime = 120;
               var slides = $('.slideShow > li');
               var slideCount = 0;
               var totalSlides = slides.length;
@@ -354,241 +354,18 @@
             
             $('.main-feature').click(function() {
                 var _this = $(this);
-                switch ($(this)[0].id)
-                {
-                  case "feature1":
-                    if($("#spot1-off").length == 0){
-                        $("#spot1").attr("id", "spot1-off");
+                for( var i = 1; i <= 12; i++){
+                    if($(this)[0].id == "feature" + i){
+                        if($("#spot" + i + "-off").length == 0){
+                            $("#spot" + i).attr("id", "spot" + i + "-off");
+                        } else {
+                            $("#spot" + i + "-off").attr("id", "spot" + i);
+                        } 
                     } else {
-                        $("#spot1-off").attr("id", "spot1");
-                    }    
-                    $("#spot2").attr("id", "spot2-off");
-                    $("#spot3").attr("id", "spot3-off");
-                    $("#spot4").attr("id", "spot4-off");
-                    $("#spot5").attr("id", "spot5-off");
-                    $("#spot6").attr("id", "spot6-off");
-                    $("#spot7").attr("id", "spot7-off");
-                    $("#spot8").attr("id", "spot8-off");
-                    $("#spot9").attr("id", "spot9-off");
-                    $("#spot10").attr("id", "spot10-off");
-                    $("#spot11").attr("id", "spot11-off");
-                    $("#spot12").attr("id", "spot12-off");
-                    break;
-                  case "feature2":
-                    $("#spot1").attr("id", "spot1-off");
-
-                    if($("#spot2-off").length == 0){
-                        $("#spot2").attr("id", "spot2-off");
-                    } else {
-                        $("#spot2-off").attr("id", "spot2");
+                        $("#spot" + i).attr("id", "spot" + i + "-off");
                     }
-                    $("#spot3").attr("id", "spot3-off");
-                    $("#spot4").attr("id", "spot4-off");
-                    $("#spot5").attr("id", "spot5-off");
-                    $("#spot6").attr("id", "spot6-off");
-                    $("#spot7").attr("id", "spot7-off");
-                    $("#spot8").attr("id", "spot8-off");
-                    $("#spot9").attr("id", "spot9-off");
-                    $("#spot10").attr("id", "spot10-off");
-                    $("#spot11").attr("id", "spot11-off");
-                    $("#spot12").attr("id", "spot12-off");
-                    break;
-                  case "feature3":
-                    $("#spot1").attr("id", "spot1-off");
-                    $("#spot2").attr("id", "spot2-off");
-                    if($("#spot3-off").length == 0){
-                        $("#spot3").attr("id", "spot3-off");
-                    } else {
-                        $("#spot3-off").attr("id", "spot3");
-                    }
-                    $("#spot4").attr("id", "spot4-off");
-                    $("#spot5").attr("id", "spot5-off");
-                    $("#spot6").attr("id", "spot6-off");
-                    $("#spot7").attr("id", "spot7-off");
-                    $("#spot8").attr("id", "spot8-off");
-                    $("#spot9").attr("id", "spot9-off");
-                    $("#spot10").attr("id", "spot10-off");
-                    $("#spot11").attr("id", "spot11-off");
-                    $("#spot12").attr("id", "spot12-off");
-                    break;
-                  case "feature4":
-                    $("#spot1").attr("id", "spot1-off");
-                    $("#spot2").attr("id", "spot2-off");
-                    $("#spot3").attr("id", "spot3-off");
-                    if($("#spot4-off").length == 0){
-                        $("#spot4").attr("id", "spot4-off");
-                    } else {
-                        $("#spot4-off").attr("id", "spot4");
-                    }
-                    $("#spot5").attr("id", "spot5-off");
-                    $("#spot6").attr("id", "spot6-off");
-                    $("#spot7").attr("id", "spot7-off");
-                    $("#spot8").attr("id", "spot8-off");
-                    $("#spot9").attr("id", "spot9-off");
-                    $("#spot10").attr("id", "spot10-off");
-                    $("#spot11").attr("id", "spot11-off");
-                    $("#spot12").attr("id", "spot12-off");
-                    break;
-                  case "feature5":
-                    $("#spot1").attr("id", "spot1-off");
-                    $("#spot2").attr("id", "spot2-off");
-                    $("#spot3").attr("id", "spot3-off");
-                    $("#spot4").attr("id", "spot4-off");
-                    if($("#spot5-off").length == 0){
-                        $("#spot5").attr("id", "spot5-off");
-                    } else {
-                        $("#spot5-off").attr("id", "spot5");
-                    }
-                    $("#spot6").attr("id", "spot6-off");
-                    $("#spot7").attr("id", "spot7-off");
-                    $("#spot8").attr("id", "spot8-off");
-                    $("#spot9").attr("id", "spot9-off");
-                    $("#spot10").attr("id", "spot10-off");
-                    $("#spot11").attr("id", "spot11-off");
-                    $("#spot12").attr("id", "spot12-off");
-                    break;
-                  case "feature6":
-                    $("#spot1").attr("id", "spot1-off");
-                    $("#spot2").attr("id", "spot2-off");
-                    $("#spot3").attr("id", "spot3-off");
-                    $("#spot4").attr("id", "spot4-off");
-                    $("#spot5").attr("id", "spot5-off");
-                    if($("#spot6-off").length == 0){
-                        $("#spot6").attr("id", "spot6-off");
-                    } else {
-                        $("#spot6-off").attr("id", "spot6");
-                    }
-                    $("#spot7").attr("id", "spot7-off");
-                    $("#spot8").attr("id", "spot8-off");
-                    $("#spot9").attr("id", "spot9-off");
-                    $("#spot10").attr("id", "spot10-off");
-                    $("#spot11").attr("id", "spot11-off");
-                    $("#spot12").attr("id", "spot12-off");
-                    break;
-                  case "feature7":
-                    $("#spot1").attr("id", "spot1-off");
-                    $("#spot2").attr("id", "spot2-off");
-                    $("#spot3").attr("id", "spot3-off");
-                    $("#spot4").attr("id", "spot4-off");
-                    $("#spot5").attr("id", "spot5-off");
-                    $("#spot6").attr("id", "spot6-off");
-                    if($("#spot7-off").length == 0){
-                        $("#spot7").attr("id", "spot7-off");
-                    } else {
-                        $("#spot7-off").attr("id", "spot7");
-                    }
-                    $("#spot8").attr("id", "spot8-off");
-                    $("#spot9").attr("id", "spot9-off");
-                    $("#spot10").attr("id", "spot10-off");
-                    $("#spot11").attr("id", "spot11-off");
-                    $("#spot12").attr("id", "spot12-off");
-                    break;
-                case "feature8":
-                    $("#spot1").attr("id", "spot1-off");
-                    $("#spot2").attr("id", "spot2-off");
-                    $("#spot3").attr("id", "spot3-off");
-                    $("#spot4").attr("id", "spot4-off");
-                    $("#spot5").attr("id", "spot5-off");
-                    $("#spot6").attr("id", "spot6-off");
-                    $("#spot7").attr("id", "spot7-off");
-                    if($("#spot8-off").length == 0){
-                        $("#spot8").attr("id", "spot8-off");
-                    } else {
-                        $("#spot8-off").attr("id", "spot8");
-                    }
-                    $("#spot9").attr("id", "spot9-off");
-                    $("#spot10").attr("id", "spot10-off");
-                    $("#spot11").attr("id", "spot11-off");
-                    $("#spot12").attr("id", "spot12-off");
-                    break;
-                case "feature9":
-                    $("#spot1").attr("id", "spot1-off");
-                    $("#spot2").attr("id", "spot2-off");
-                    $("#spot3").attr("id", "spot3-off");
-                    $("#spot4").attr("id", "spot4-off");
-                    $("#spot5").attr("id", "spot5-off");
-                    $("#spot6").attr("id", "spot6-off");
-                    $("#spot7").attr("id", "spot7-off");
-                    $("#spot8").attr("id", "spot8-off");
-                    if($("#spot9-off").length == 0){
-                        $("#spot9").attr("id", "spot9-off");
-                    } else {
-                        $("#spot9-off").attr("id", "spot9");
-                    }
-                    $("#spot10").attr("id", "spot10-off");
-                    $("#spot11").attr("id", "spot11-off");
-                    $("#spot12").attr("id", "spot12-off");
-                    break;
-                  case "feature10":
-                    $("#spot1").attr("id", "spot1-off");
-                    $("#spot2").attr("id", "spot2-off");
-                    $("#spot3").attr("id", "spot3-off");
-                    $("#spot4").attr("id", "spot4-off");
-                    $("#spot5").attr("id", "spot5-off");
-                    $("#spot6").attr("id", "spot6-off");
-                    $("#spot7").attr("id", "spot7-off");
-                    $("#spot8").attr("id", "spot8-off");
-                    $("#spot9").attr("id", "spot9-off");
-                    if($("#spot10-off").length == 0){
-                        $("#spot10").attr("id", "spot10-off");
-                    } else {
-                        $("#spot10-off").attr("id", "spot10");
-                    }
-                    $("#spot11").attr("id", "spot11-off");
-                    $("#spot12").attr("id", "spot12-off");
-                    break;
-                case "feature11":
-                    $("#spot1").attr("id", "spot1-off");
-                    $("#spot2").attr("id", "spot2-off");
-                    $("#spot3").attr("id", "spot3-off");
-                    $("#spot4").attr("id", "spot4-off");
-                    $("#spot5").attr("id", "spot5-off");
-                    $("#spot6").attr("id", "spot6-off");
-                    $("#spot7").attr("id", "spot7-off");
-                    $("#spot8").attr("id", "spot8-off");
-                    $("#spot9").attr("id", "spot9-off");
-                    $("#spot10").attr("id", "spot10-off");
-                    if($("#spot11-off").length == 0){
-                        $("#spot11").attr("id", "spot11-off");
-                    } else {
-                        $("#spot11-off").attr("id", "spot11");
-                    }
-                    $("#spot12").attr("id", "spot12-off");
-                    break;
-                case "feature12":
-                    $("#spot1").attr("id", "spot1-off");
-                    $("#spot2").attr("id", "spot2-off");
-                    $("#spot3").attr("id", "spot3-off");
-                    $("#spot4").attr("id", "spot4-off");
-                    $("#spot5").attr("id", "spot5-off");
-                    $("#spot6").attr("id", "spot6-off");
-                    $("#spot7").attr("id", "spot7-off");
-                    $("#spot8").attr("id", "spot8-off");
-                    $("#spot9").attr("id", "spot9-off");
-                    $("#spot10").attr("id", "spot10-off");
-                    $("#spot11").attr("id", "spot11-off");
-                    if($("#spot12-off").length == 0){
-                        $("#spot12").attr("id", "spot12-off");
-                    } else {
-                        $("#spot12-off").attr("id", "spot12");
-                    }
-                    break;
-                  default:
-                    $("#spot1").attr("id", "spot1-off");
-                    $("#spot2").attr("id", "spot2-off");
-                    $("#spot3").attr("id", "spot3-off");
-                    $("#spot4").attr("id", "spot4-off");
-                    $("#spot5").attr("id", "spot5-off");
-                    $("#spot6").attr("id", "spot6-off");
-                    $("#spot7").attr("id", "spot7-off");
-                    $("#spot8").attr("id", "spot8-off");
-                    $("#spot9").attr("id", "spot9-off");
-                    $("#spot10").attr("id", "spot10-off");
-                    $("#spot11").attr("id", "spot11-off");
-                    $("#spot12").attr("id", "spot12-off");
-                      break;
                 }
-            
+                
                 _this.children().slideToggle();
                 $('ul > li').not(_this).children('ul').slideUp();
             });
