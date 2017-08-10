@@ -1177,7 +1177,7 @@
             if (!s.params.pagination) return;
             if (s.paginationContainer && s.paginationContainer.length > 0) {
                 var paginationHTML = '';
-                var titles = ["BACKBEAT PRO 2", "BACKBEAT FIT", "BACKBEAT SENSE", "BACKBEAT PRO +"];
+                var titles = ["BACKBEAT PRO 2", "BACKBEAT FIT", "BACKBEAT SENSE", "BACKBEAT 500"];
                 if (s.params.paginationType === 'bullets') {
                     var numberOfBullets = s.params.loop ? Math.ceil((s.slides.length - s.loopedSlides * 2) / s.params.slidesPerGroup) : s.snapGrid.length;
                     for (var i = 0; i < numberOfBullets; i++) {
