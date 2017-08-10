@@ -9,7 +9,7 @@
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <!-- Link Swiper's CSS -->
-        <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" href="css/swiper2.css">
         <link rel="stylesheet" href="css/style_exhibit3.css">
         <link href="css/lato.css" rel="stylesheet">
         <link href="css/roboto.css" rel="stylesheet">
@@ -24,6 +24,7 @@
                         <li><img src="media/exhibit3/slide2.png"></li>
                         <li><img src="media/exhibit3/slide3.png"></li>
                         <li><img src="media/exhibit3/slide4.png"></li>
+                        <li><img src="media/exhibit3/slide5.png"></li>
                     </ul>
                 </div>
             </div>
@@ -214,16 +215,16 @@
                     <div class="row padded">
                         <div class="col-6">
                             <div class="header-text">
-                                <div id="main-header">Voyager Edge</div>
-                                <div id="secondary-header">Be ready when your life calls.</div>
+                                <div id="main-header">Voyager 3200 UC</div>
+                                <div id="secondary-header">Designed for your non-stop life.</div>
                             </div>
                             <div class="features">
                                 <h3>KEY FEATURES</h3>
                                 <ul>
                                     <li class="main-feature" id="feature10">
-                                        Charging Case Enables up to 16 Hours Talk Time
+                                        Charging Case Enables up to 10 Hours Talk Time
                                         <ul>
-                                            <li> Rechargeable case tops up headset, adding up to 10 more hours of talk time, plus it shows the charge status of both headset and case.</li>
+                                            <li>Rechargeable case tops up headset, adding up to 10 more hours of talk time, plus it shows the charge status of both headset and case.</li>
                                         </ul>
                                     </li>
                                     <li class="main-feature" id="feature11">
@@ -252,7 +253,7 @@
                                     <li class="view-more">
                                         View More...
                                     </li>
-                                    <img src="media/pltLogo.png" class="pltImage modalClick" onClick="video_url('https://www.youtube.com/embed/_6G8RBdK8nA?rel=0&autoplay=1&showinfo=0&controls=2');">
+                                    <img src="media/pltLogo.png" class="pltImage modalClick" onClick="video_url('https://www.youtube.com/embed/iexNCvNSaHk?rel=0&autoplay=1&showinfo=0&controls=2');">
                                 </ul>
                             </div>
                         </div>
@@ -270,6 +271,67 @@
                         </div>
                     </div>
                     <div id="footer4"></div>
+                </div>
+                <div class="swiper-slide" id="container5">
+                    <div class="row padded">
+                        <div class="col-6">
+                            <div class="header-text">
+                                <div id="main-header">Voyager 8200 UC</div>
+                                <div id="secondary-header">Make your place a perfect workplace.</div>
+                            </div>
+                            <div class="features">
+                                <h3>KEY FEATURES</h3>
+                                <ul>
+                                    <li class="main-feature" id="feature13">
+                                        Multi-device Connectivity
+                                        <ul>
+                                            <li>By staying connected to two devices at once, you'll never miss a call. Play music or answer your phone simply by putting on the headset, and pause your media player or mute a call by taking it off. A dedicated button gives you quick access to mute, while voice prompts alert you if you're on mute when you start talking.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-feature" id="feature14">
+                                        Boomless Design
+                                        <ul>
+                                            <li>Features dual-paired omni-directional microphones and enhanced noise canceling.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-feature" id="feature15">
+                                        Rich Audio
+                                        <ul>
+                                            <li>Immerse yourself in rich audio. Hear music and conversations with complete clarity. All tones, from high to low and everything in between, sound full and natural.</li>
+                                        </ul>
+                                    </li>
+                                    <div class="show-more">
+                                        <li class="main-feature">
+                                            Enjoy up to 24 hours of wireless music, movies and calls
+                                        </li>
+                                        <li class="main-feature">
+                                            Smarter Sensor Technology
+                                        </li>
+                                        <li class="main-feature">
+                                            Dynamic Mute Alert
+                                        </li>
+                                    </div>
+                                    <li class="view-more">
+                                        View More...
+                                    </li>
+                                    <img src="media/pltLogo.png" class="pltImage modalClick" onClick="video_url('https://www.youtube.com/embed/UTZQyY1Yp3k?rel=0&autoplay=1&showinfo=0&controls=2');">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="center">
+                                <div class="spot-container">
+                                    <div class="product">
+                                        <img src="media/exhibit3/product-4.png" id="voyager-8200" class="prodImg">
+                                    </div>
+                                    <div id="spot13-off" class="spot"></div>
+                                    <div id="spot14-off" class="spot"></div>
+                                    <div id="spot15-off" class="spot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer5"></div>
                 </div>
             </div>
             <!-- Add Pagination -->
@@ -364,7 +426,7 @@
             
             $('.main-feature').click(function() {
                 var _this = $(this);
-                for( var i = 1; i <= 12; i++){
+                for( var i = 1; i <= 15; i++){
                     if($(this)[0].id == "feature" + i){
                         if($("#spot" + i + "-off").length == 0){
                             $("#spot" + i).attr("id", "spot" + i + "-off");

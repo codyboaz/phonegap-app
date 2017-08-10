@@ -1177,7 +1177,7 @@
             if (!s.params.pagination) return;
             if (s.paginationContainer && s.paginationContainer.length > 0) {
                 var paginationHTML = '';
-                var titles = ["VOYAGER FOCUS UC", "VOYAGER 5200 UC", "VOYAGER LEGEND CS", "VOYAGER EDGE"];
+                var titles = ["VOYAGER FOCUS UC", "VOYAGER 5200 UC", "VOYAGER LEGEND CS", "VOYAGER 3200 UC", "VOYAGER 8200 UC"];
                 if (s.params.paginationType === 'bullets') {
                     var numberOfBullets = s.params.loop ? Math.ceil((s.slides.length - s.loopedSlides * 2) / s.params.slidesPerGroup) : s.snapGrid.length;
                     for (var i = 0; i < numberOfBullets; i++) {
@@ -1186,13 +1186,15 @@
                         }
                         else {
                             if(i === 0) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit3/product-' + i + '.png" style="height: 100px; margin-left: 55px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit3/product-' + i + '.png" style="height: 100px; margin-left: -15px"> <span style="margin-left: -60px" class="inline-title">'+ titles[i] +'</span></div>';
                             } else if(i === 1) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit3/product-' + i + '.png" style="height: 60px; margin-bottom: 7px; margin-left: 35px"> <span class="inline-title" style="margin-left: 10px">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit3/product-' + i + '.png" style="height: 60px; margin-bottom: 12px; margin-left: -5px"> <span class="inline-title" style="margin-left: -35px">'+ titles[i] +'</span></div>';
                             } else if(i === 2) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit3/product-' + i + '.png" style="height: 95px; margin-left: 40px; margin-bottom: -3px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit3/product-' + i + '.png" style="height: 95px; margin-left: 8px; margin-bottom: -3px"> <span style="margin-left: -25px" class="inline-title">'+ titles[i] +'</span></div>';
+                            } else if(i === 3) {
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit3/product-' + i + '.png" style="height: 70px; margin-left: 20px; margin-bottom: -3px"> <span class="inline-title">'+ titles[i] +'</span></div>';
                             } else {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit3/product-' + i + '.png" style="height: 65px; margin-left: 25px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit3/product-' + i + '.png" style="height: 100px; width:80px; margin-bottom: -10px; margin-left: 20px"> <span class="inline-title">'+ titles[i] +'</span></div>';
                             }
                             
                         }
