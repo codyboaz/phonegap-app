@@ -531,3 +531,52 @@ h3{
 .header-text{
     position: absolute;
 }
+.myButton1 {
+	background-color:transparent;
+	border:1.75px solid #ffffff;
+	color:#ffffff !important;
+	font-size:20px;
+	padding:12px 12px;
+	text-decoration:none;
+    position: absolute;
+    margin-left: 370px;
+    margin-top: -15px;
+    font-weight: 100 !important;
+}
+.myButton2 {
+	background-color:transparent;
+	border:1.75px solid #ffffff;
+	color:#ffffff !important;
+	font-size:20px;
+	padding:12px 12px;
+	text-decoration:none;
+    position: absolute;
+    margin-left: 370px;
+    margin-top: -15px;
+    font-weight: 100 !important;
+}
+.myButton3 {
+	background-color:transparent;
+	border:1.75px solid #ffffff;
+	color:#ffffff !important;
+	font-size:20px;
+	padding:12px 12px;
+	text-decoration:none;
+    position: absolute;
+    margin-left: 370px;
+    margin-top: -15px;
+    font-weight: 100 !important;
+}
+.myButton4 {
+	background-color:transparent;
+	border:1.75px solid #ffffff;
+	color:#ffffff !important;
+	font-size:20px;
+	padding:12px 12px;
+	text-decoration:none;
+    position: absolute;
+    margin-left: 370px;
+    margin-top: -15px;
+    font-weight: 100 !important;
+}
+
