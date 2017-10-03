@@ -1177,7 +1177,7 @@
             if (!s.params.pagination) return;
             if (s.paginationContainer && s.paginationContainer.length > 0) {
                 var paginationHTML = '';
-                var titles = ["BACKBEAT PRO 2", "BACKBEAT FIT", "BACKBEAT SENSE", "BACKBEAT 500"];
+                var titles = ["BACKBEAT PRO 2", "BACKBEAT 300", "BACKBEAT 500", "BACKBEAT FIT"];
                 if (s.params.paginationType === 'bullets') {
                     var numberOfBullets = s.params.loop ? Math.ceil((s.slides.length - s.loopedSlides * 2) / s.params.slidesPerGroup) : s.snapGrid.length;
                     for (var i = 0; i < numberOfBullets; i++) {
@@ -1186,13 +1186,13 @@
                         }
                         else {
                             if(i === 0) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px; margin-bottom: -4px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px"> <span class="inline-title">'+ titles[i] +'</span></div>';
                             } else if(i === 1) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 72px; width:105px; margin-bottom: -7px"> <span class="inline-title" style="margin-left: 15px">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px"> <span class="inline-title" style="margin-left: -8px">'+ titles[i] +'</span></div>';
                             } else if(i === 2) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px; margin-bottom: -7px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px; margin-bottom: -5px"> <span class="inline-title">'+ titles[i] +'</span></div>';
                             } else {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 9px; margin-bottom: -7px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 72px; width:105px; margin-left: -8px; margin-bottom: -7px"> <span class="inline-title">'+ titles[i] +'</span></div>';
                             }
                             
                         }

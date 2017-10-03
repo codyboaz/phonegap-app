@@ -16,13 +16,13 @@
     background: url("../media/exhibit1/background2.png") no-repeat;
 }
 #container2{
-    background: url("../media/exhibit1/background1.png") no-repeat;
-}
-#container3{
     background: url("../media/exhibit1/background3.png") no-repeat;
 }
-#container4{
+#container3{
     background: url("../media/exhibit1/background4.png") no-repeat;
+}
+#container4{
+    background: url("../media/exhibit1/background1.png") no-repeat;  
 }
 #main-header {
     font-size: 60px;
@@ -118,21 +118,21 @@ width: 83.33%;
     position: relative;
 }
 #footer2{
-    background-image: url("../media/linoleum2.jpg");
-    height: 240px;
-    background-repeat: no-repeat;
-    bottom: 95px;
-    position: relative;
-}
-#footer3{
     background-image: url("../media/linoleum1.jpg");
     height: 240px;
     background-repeat: no-repeat;
     bottom: 95px;
     position: relative;
 }
-#footer4{
+#footer3{
     background-image: url("../media/woodgrain2.jpg");
+    height: 240px;
+    background-repeat: no-repeat;
+    bottom: 95px;
+    position: relative;
+}
+#footer4{
+    background-image: url("../media/linoleum2.jpg");
     height: 240px;
     background-repeat: no-repeat;
     bottom: 95px;
@@ -281,95 +281,53 @@ h3{
 }
 #spot4 {
     position: absolute;
-    bottom: 60%;
-    left: -1%;
+    bottom: 17%;
+    left: 1%;
     z-index:10;
 }
 #spot4-off {
     position: absolute;
-    bottom: 67%;
-    left: 7%;
+    bottom: 25%;
+    left: 8%;
     z-index:10;
     height: 10px;
     width: 10px;
 }
 #spot5 {
     position: absolute;
-    bottom: 19%;
-    left: 64%;
+    bottom: 82%;
+    left: 50%;
     z-index:10;
 }
 #spot5-off {
     position: absolute;
-    bottom: 26%;
-    left: 72%;
+    bottom: 89%;
+    left: 59%;
     z-index:10;
     height: 10px;
     width: 10px;
 }
 #spot6 {
     position: absolute;
-    top: 62%;
-    right: 47%;
+    top: -4%;
+    right: 65%;
     z-index:10;
 }
 #spot6-off {
     position: absolute;
-    top: 69%;
-    right: 55%;
+    top: 3%;
+    right: 73%;
     z-index:10;
     height: 10px;
     width: 10px;
 }
 #spot7 {
     position: absolute;
-    bottom: 23%;
-    left: 18%;
-    z-index:10;
-}
-#spot7-off {
-    position: absolute;
-    bottom: 30%;
-    left: 26%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot8 {
-    position: absolute;
-    top: 52%;
-    right: 35%;
-    z-index:10;
-}
-#spot8-off {
-    position: absolute;
-    top: 59%;
-    right: 43%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot9 {
-    position: absolute;
-    bottom: 82%;
-    left: 16%;
-    z-index:10;
-}
-#spot9-off {
-    position: absolute;
-    bottom: 89%;
-    left: 24%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot10 {
-    position: absolute;
     bottom: 16%;
     left: 63%;
     z-index:10;
 }
-#spot10-off {
+#spot7-off {
     position: absolute;
     bottom: 24%;
     left: 71%;
@@ -377,30 +335,72 @@ h3{
     height: 10px;
     width: 10px;
 }
+#spot8 {
+    position: absolute;
+    top: 54%;
+    right: 27%;
+    z-index:10;
+}
+#spot8-off {
+    position: absolute;
+    top: 61%;
+    right: 35%;
+    z-index:10;
+    height: 10px;
+    width: 10px;
+}
+#spot9 {
+    position: absolute;
+    bottom: 11%;
+    left: 7%;
+    z-index:10;
+}
+#spot9-off {
+    position: absolute;
+    bottom: 18%;
+    left: 15%;
+    z-index:10;
+    height: 10px;
+    width: 10px;
+}
+#spot10 {
+    position: absolute;
+    bottom: 58%;
+    left: -2%;
+    z-index:10;
+}
+#spot10-off {
+    position: absolute;
+    bottom: 66%;
+    left: 6%;
+    z-index:10;
+    height: 10px;
+    width: 10px;
+}
 #spot11 {
     position: absolute;
-    bottom: 29%;
-    left: 54%;
+    bottom: 19%;
+    left: 63%;
     z-index:10;
 }
 #spot11-off {
     position: absolute;
-    bottom: 36%;
-    left: 62%;
+    bottom: 26%;
+    left: 71%;
     z-index:10;
     height: 10px;
     width: 10px;
 }
 #spot12 {
     position: absolute;
-    top: 72%;
-    right: 71%;
+    top: 62%;
+    right: 48%;
     z-index:10;
 }
 #spot12-off {
     position: absolute;
-    top: 79%;
-    right: 79%;
+    top: 69%;
+    right: 56%;
     z-index:10;
     height: 10px;
     width: 10px;
