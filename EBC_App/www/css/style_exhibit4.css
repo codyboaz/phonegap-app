@@ -12,17 +12,11 @@
     font-size: 19px;
     margin-top: 10px;
 }
-#container{
-    background: url("../media/exhibit1/background2.png") no-repeat;
-}
-#container2{
-    background: url("../media/exhibit1/background3.png") no-repeat;
-}
 #container3{
-    background: url("../media/exhibit1/background4.png") no-repeat;
+    background: url("../media/exhibit4/background1.png") no-repeat;
 }
 #container4{
-    background: url("../media/exhibit1/background1.png") no-repeat;  
+    background: url("../media/exhibit4/background2.png") no-repeat;  
 }
 #main-header {
     font-size: 60px;
@@ -111,28 +105,14 @@ width: 83.33%;
     width: 100%;
 }
 #footer{
-    background-image: url("../media/woodgrain.jpg");
-    height: 240px;
-    background-repeat: no-repeat;
-    bottom: 95px;
-    position: relative;
-}
-#footer2{
-    background-image: url("../media/linoleum1.jpg");
-    height: 240px;
-    background-repeat: no-repeat;
-    bottom: 95px;
-    position: relative;
-}
-#footer3{
     background-image: url("../media/woodgrain2.jpg");
     height: 240px;
     background-repeat: no-repeat;
     bottom: 95px;
     position: relative;
 }
-#footer4{
-    background-image: url("../media/linoleum2.jpg");
+#footer2{
+    background-image: url("../media/woodgrain.jpg");
     height: 240px;
     background-repeat: no-repeat;
     bottom: 95px;
