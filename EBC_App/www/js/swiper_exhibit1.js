@@ -1177,7 +1177,7 @@
             if (!s.params.pagination) return;
             if (s.paginationContainer && s.paginationContainer.length > 0) {
                 var paginationHTML = '';
-                var titles = ["BACKBEAT PRO 2", "BACKBEAT 300", "BACKBEAT 500", "BACKBEAT FIT"];
+                var titles = ["VOYAGER 3200", "VOYAGER 8200 UC"];
                 if (s.params.paginationType === 'bullets') {
                     var numberOfBullets = s.params.loop ? Math.ceil((s.slides.length - s.loopedSlides * 2) / s.params.slidesPerGroup) : s.snapGrid.length;
                     for (var i = 0; i < numberOfBullets; i++) {
@@ -1186,13 +1186,9 @@
                         }
                         else {
                             if(i === 0) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px"> <span class="inline-title">'+ titles[i] +'</span></div>';
-                            } else if(i === 1) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px"> <span class="inline-title" style="margin-left: -8px">'+ titles[i] +'</span></div>';
-                            } else if(i === 2) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px; margin-left: 14px; margin-bottom: -5px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 75px; margin-left: -58px; margin-top: 35px"> <span style="margin-left: -60px" class="inline-title">'+ titles[i] +'</span></div>';
                             } else {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 72px; width:105px; margin-left: -8px; margin-bottom: -7px"> <span class="inline-title">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit1/product-' + i + '.png" style="height: 100px; width:80px; margin-bottom: -10px; margin-left: 20px"> <span class="inline-title">'+ titles[i] +'</span></div>';
                             }
                             
                         }

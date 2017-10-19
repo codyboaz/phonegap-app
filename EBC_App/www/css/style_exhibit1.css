@@ -13,34 +13,23 @@
     margin-top: 10px;
 }
 #container{
-    background: url("../media/exhibit1/background2.png") no-repeat;
+    background: url("../media/exhibit1/background1.png") no-repeat;
 }
 #container2{
-    background: url("../media/exhibit1/background3.png") no-repeat;
+    background: url("../media/exhibit1/background2.png") no-repeat;
 }
-#container3{
-    background: url("../media/exhibit1/background4.png") no-repeat;
-}
-#container4{
-    background: url("../media/exhibit1/background1.png") no-repeat;  
-}
+
 #main-header {
     font-size: 60px;
 }
 #secondary-header {
     font-size: 30px;
 }
-#bbfit{
-    height: 400px;
-    width: 450px;
-    position: relative;
-    z-index: 2;
-    margin-top: 160px;
-}
-#bb500{
-    height: 560px;
-    width: 465px;
-    position: relative;
+#voyager-edge{
+    height: 420px;
+    margin-top: 135px;
+    left: 10px;
+    position: absolute;
     z-index: 10;
 }
 .prodImg{
@@ -110,29 +99,15 @@ width: 83.33%;
 .col-12 {
     width: 100%;
 }
-#footer{
-    background-image: url("../media/woodgrain.jpg");
-    height: 240px;
-    background-repeat: no-repeat;
-    bottom: 95px;
-    position: relative;
-}
-#footer2{
+#footer1{
     background-image: url("../media/linoleum1.jpg");
     height: 240px;
     background-repeat: no-repeat;
-    bottom: 95px;
+    bottom: -469px;
     position: relative;
 }
-#footer3{
-    background-image: url("../media/woodgrain2.jpg");
-    height: 240px;
-    background-repeat: no-repeat;
-    bottom: 95px;
-    position: relative;
-}
-#footer4{
-    background-image: url("../media/linoleum2.jpg");
+#footer2{
+    background-image: url("../media/woodgrain3.jpg");
     height: 240px;
     background-repeat: no-repeat;
     bottom: 95px;
@@ -239,171 +214,87 @@ h3{
 }
 #spot1 {
     position: absolute;
-    bottom: 31%;
-    left: 5%;
+    margin-top: 67%;
+    left: 62%;
     z-index:10;
 }
 #spot1-off {
     position: absolute;
-    bottom: 38%;
-    left: 13%;
+    margin-top: 75%;
+    left: 70%;
     z-index:10;
     height: 10px;
-    width: 10px;
+    width: 10px
 }
 #spot2 {
     position: absolute;
-    bottom: 39%;
-    left: 47%;
+    margin-top: 23%;
+    left: 16%;
     z-index:10;
 }
 #spot2-off {
     position: absolute;
-    bottom: 46%;
-    left: 55%;
+    margin-top: 30%;
+    left: 24%;
     z-index:10;
     height: 10px;
-    width: 10px;
+    width: 10px
 }
 #spot3 {
     position: absolute;
-    top: 64%;
-    right: 64%;
+    margin-top: 84%;
+    right: 20%;
     z-index:10;
 }
 #spot3-off {
     position: absolute;
-    top: 71%;
-    right: 72%;
+    margin-top: 92%;
+    right: 28%;
     z-index:10;
     height: 10px;
-    width: 10px;
+    width: 10px
 }
 #spot4 {
     position: absolute;
-    bottom: 17%;
-    left: 1%;
+    margin-top: -37%;
+    left: 27%;
     z-index:10;
 }
 #spot4-off {
     position: absolute;
-    bottom: 25%;
-    left: 8%;
+    margin-top: -29%;
+    left: 35%;
     z-index:10;
     height: 10px;
-    width: 10px;
+    width: 10px
 }
 #spot5 {
     position: absolute;
-    bottom: 82%;
-    left: 50%;
+    margin-top: -44%;
+    left: 55%;
     z-index:10;
 }
 #spot5-off {
     position: absolute;
-    bottom: 89%;
-    left: 59%;
+    margin-top: -36%;
+    left: 63%;
     z-index:10;
     height: 10px;
-    width: 10px;
+    width: 10px
 }
 #spot6 {
     position: absolute;
-    top: -4%;
-    right: 65%;
+    margin-top: -56%;
+    right: 39%;
     z-index:10;
 }
 #spot6-off {
     position: absolute;
-    top: 3%;
-    right: 73%;
+    margin-top: -48%;
+    right: 46%;
     z-index:10;
     height: 10px;
-    width: 10px;
-}
-#spot7 {
-    position: absolute;
-    bottom: 16%;
-    left: 63%;
-    z-index:10;
-}
-#spot7-off {
-    position: absolute;
-    bottom: 24%;
-    left: 71%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot8 {
-    position: absolute;
-    top: 54%;
-    right: 27%;
-    z-index:10;
-}
-#spot8-off {
-    position: absolute;
-    top: 61%;
-    right: 35%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot9 {
-    position: absolute;
-    bottom: 11%;
-    left: 7%;
-    z-index:10;
-}
-#spot9-off {
-    position: absolute;
-    bottom: 18%;
-    left: 15%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot10 {
-    position: absolute;
-    bottom: 58%;
-    left: -2%;
-    z-index:10;
-}
-#spot10-off {
-    position: absolute;
-    bottom: 66%;
-    left: 6%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot11 {
-    position: absolute;
-    bottom: 19%;
-    left: 63%;
-    z-index:10;
-}
-#spot11-off {
-    position: absolute;
-    bottom: 26%;
-    left: 71%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot12 {
-    position: absolute;
-    top: 62%;
-    right: 48%;
-    z-index:10;
-}
-#spot12-off {
-    position: absolute;
-    top: 69%;
-    right: 56%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
+    width: 10px
 }
 .element {
     height: 250px;
@@ -485,7 +376,7 @@ h3{
   padding: 10px 20px 10px 55px;
   text-decoration: none;
   display: block;
-  margin-top: 40px;
+  margin-top: 22px;
   width: 150px;
 }
 .homepage-header h1{
@@ -501,7 +392,7 @@ h3{
 .homepage-header h3{
   margin: 0;
   position: absolute;
-  top: 45%;
+  top: 42%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -513,7 +404,7 @@ h3{
   border-radius: 100%;
   margin: 0;
   position: absolute;
-  top: 30%;
+  top: 28%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -523,7 +414,7 @@ h3{
 .homepage-btns {
   margin: 0;
   position: absolute;
-  top: 68%;
+  top: 70%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
