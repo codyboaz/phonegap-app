@@ -13,16 +13,10 @@
     margin-top: 10px;
 }
 #container{
-    background: url("../media/exhibit2/background1.png") no-repeat;
+    background: url("../media/exhibit3/background1.png") no-repeat;
 }
 #container2{
-    background: url("../media/exhibit2/background2.png") no-repeat;
-}
-#container3{
-    background: url("../media/exhibit2/background3.png") no-repeat;
-}
-#container4{
-    background: url("../media/exhibit2/background4.png") no-repeat;
+    background: url("../media/exhibit3/background2.png") no-repeat;
 }
 #main-header {
     font-size: 60px;
@@ -240,95 +234,11 @@ h3{
 }
 #spot1 {
     position: absolute;
-    margin-top: 40%;
-    left: 19%;
-    z-index:10;
-}
-#spot1-off {
-    position: absolute;
-    margin-top: 48%;
-    left: 27%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot2 {
-    position: absolute;
-    margin-top: 25%;
-    left: 32%;
-    z-index:10;
-}
-#spot2-off {
-    position: absolute;
-    margin-top: 33%;
-    left: 40%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot3 {
-    position: absolute;
-    margin-top: 87%;
-    right: 66%;
-    z-index:10;
-}
-#spot3-off {
-    position: absolute;
-    margin-top: 95%;
-    right: 74%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot4 {
-    position: absolute;
-    margin-top: 55%;
-    left: 45%;
-    z-index:10;
-}
-#spot4-off {
-    position: absolute;
-    margin-top: 63%;
-    left: 53%;
-    z-index:10;
-    height: 10px;
-    width: 10px;
-}
-#spot5 {
-    position: absolute;
-    margin-top: 88%;
-    left: 67%;
-    z-index:10;
-}
-#spot5-off {
-    position: absolute;
-    margin-top: 96%;
-    left: 75%;
-    z-index:10;
-    height: 10px;
-    width: 10px
-}
-#spot6 {
-    position: absolute;
-    margin-top: 8%;
-    right: 54%;
-    z-index:10;
-}
-#spot6-off {
-    position: absolute;
-    margin-top: 16%;
-    right: 62%;
-    z-index:10;
-    height: 10px;
-    width: 10px
-}
-#spot7 {
-    position: absolute;
     margin-top: 44%;
     left: 13%;
     z-index:10;
 }
-#spot7-off {
+#spot1-off {
     position: absolute;
     margin-top: 52%;
     left: 21%;
@@ -336,13 +246,13 @@ h3{
     height: 10px;
     width: 10px
 }
-#spot8 {
+#spot2 {
     position: absolute;
     margin-top: 33%;
     right: 51%;
     z-index:10;
 }
-#spot8-off {
+#spot2-off {
     position: absolute;
     margin-top: 41%;
     right: 59%;
@@ -350,13 +260,13 @@ h3{
     height: 10px;
     width: 10px
 }
-#spot9 {
+#spot3 {
     position: absolute;
     margin-top: 19%;
     left: 46%;
     z-index:10;
 }
-#spot9-off {
+#spot3-off {
     position: absolute;
     margin-top: 27%;
     left: 54%;
@@ -364,13 +274,13 @@ h3{
     height: 10px;
     width: 10px
 }
-#spot10 {
+#spot4 {
     position: absolute;
     margin-top: 9%;
     left: 50%;
     z-index:10;
 }
-#spot10-off {
+#spot4-off {
     position: absolute;
     margin-top: 16%;
     left: 58%;
@@ -378,13 +288,13 @@ h3{
     height: 10px;
     width: 10px
 }
-#spot11 {
+#spot5 {
     position: absolute;
     margin-top: 37%;
     left: 19%;
     z-index:10;
 }
-#spot11-off {
+#spot5-off {
     position: absolute;
     margin-top: 45%;
     left: 27%;
@@ -392,13 +302,13 @@ h3{
     height: 10px;
     width: 10px
 }
-#spot12 {
+#spot6 {
     position: absolute;
     margin-top: 55%;
     right: 21%;
     z-index:10;
 }
-#spot12-off {
+#spot6-off {
     position: absolute;
     margin-top: 63%;
     right: 29%;
