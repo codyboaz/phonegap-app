@@ -1177,7 +1177,7 @@
             if (!s.params.pagination) return;
             if (s.paginationContainer && s.paginationContainer.length > 0) {
                 var paginationHTML = '';
-                var titles = ["CS500 SERIES", "ENCOREPRO 720", "CALISTO 620 BLUETOOTH", "SAVI 700 SERIES"];
+                var titles = ["CS500 SERIES", "BLACKWIRE 5220 USB-C", "CALISTO 620 BLUETOOTH", "SAVI 700 SERIES"];
                 if (s.params.paginationType === 'bullets') {
                     var numberOfBullets = s.params.loop ? Math.ceil((s.slides.length - s.loopedSlides * 2) / s.params.slidesPerGroup) : s.snapGrid.length;
                     for (var i = 0; i < numberOfBullets; i++) {
@@ -1188,7 +1188,7 @@
                             if(i === 0) {
                                 paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit2/product-' + i + '.png" style="height: 90px; margin-left: 22px; margin-bottom: 3px"> <span class="inline-title">'+ titles[i] +'</span></div>';
                             } else if(i === 1) {
-                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit2/product-' + i + '.png" style="height: 95px; margin-bottom: -4px"> <span class="inline-title" style="margin-left: -9px">'+ titles[i] +'</span></div>';
+                                paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit2/product-' + i + '.png" style="height: 105px; margin-bottom: -11px"> <span class="inline-title" style="margin-left: -60px">'+ titles[i] +'</span></div>';
                             } else if(i === 2) {
                                 paginationHTML += '<div class="' + s.params.bulletClass + '"><img src="media/exhibit2/product-' + i + '.png" style="height: 70px; margin-left: 14px; margin-bottom: 2px"> <span class="inline-title" style="margin-left: -35px">'+ titles[i] +'</span></div>';
                             } else {
